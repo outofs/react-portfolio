@@ -1,0 +1,57 @@
+:root {
+  --bg--color: #ffffff;
+  --text--color: 255, 255, 255;
+  --box--shadow: 100, 100, 111, 0.2 0px 7px 29px 0px;
+  --white--var: 255, 255, 255;
+  --white--var--gradient: 255, 255, 255;
+  --black--var: 0, 0, 0;
+  --black--var--gradient: 0, 0, 0;
+  --main-color: #ff0000;
+}
+
+$body-bg: var(--bg--color);
+$main-color: var(--main-color);
+$text-color: var(--text--color);
+
+$big-font-size: 3.5rem;
+$h1-font-size: 2.25rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+$normal-font-size: 1rem;
+$small-font-size: 0.875rem;
+$smaller-font-size: 0.813rem;
+$tiny-font-size: 0.625rem;
+
+$font-normal: 400;
+$font-medium: 500;
+$font-bold: 600;
+
+$mb-0-25: 0.25rem;
+$mb-0-5: 0.5rem;
+$mb-0-75: 0.75rem;
+$mb-1: 1rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+$mb-2-5: 2.5rem;
+$mb-3: 3rem;
+
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+$white: var(--white--var);
+$white-gradient: var(--white--var--gradient);
+$black: var(--black--var);
+$black-gradient: var(--black--var--gradient);
+
+$box-shadow: var(--box--shadow);
+
+$header-height: 8rem;
+$header-shrink-height: 5rem;
+$border-radius: 30px;
+$large-devises: 992px;
+$medium-768px-devises: 768px;
+$medium-576px-devises: 576px;
+$small-devices: 350px;
+
+$font-family: "Urbanist", sans-serif;

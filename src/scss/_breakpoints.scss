@@ -1,0 +1,30 @@
+@use "./variables" as *;
+
+// $large-devises: 992px;
+// $medium-768px-devises: 768px;
+// $medium-576px-devises: 576px;
+// $small-devices: 350px;
+
+@mixin large {
+  @media only screen and (max-width: $large-devises) {
+    @content;
+  }
+}
+
+@mixin medium-768 {
+  @media only screen and (max-width: $medium-768px-devises) {
+    @content;
+  }
+}
+
+@mixin medium-576 {
+  @media only screen and (max-width: $medium-576px-devises) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media only screen and (max-width: $small-devices) {
+    @content;
+  }
+} ;

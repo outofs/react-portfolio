@@ -1,0 +1,130 @@
+@use "../../scss/" as *;
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-fixed;
+  background-color: $body-bg;
+  opacity: 100%;
+
+  @include medium-768 {
+    top: initial;
+    bottom: 0;
+  }
+
+  .nav {
+    max-width: 992px;
+    height: calc($header-height + 1.5rem);
+    @include flex(center, space-between);
+
+    @include medium-768 {
+      height: $header-height;
+    }
+
+    &__menu {
+      @include medium-768 {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: $body-bg;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba($color: #000000, $alpha: 0.15);
+        transition: 0.3s;
+      }
+
+      @include small {
+        padding: 2rem 0.25rem 4rem;
+      }
+    }
+
+    &__logo,
+    &__toggle {
+      color: $text-color;
+      font-weight: $font-medium;
+    }
+
+    &__logo:hover {
+      color: $main-color;
+    }
+
+    &__toggle {
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    &__toggle:hover {
+      color: $main-color;
+    }
+
+    &__list {
+      display: flex;
+      column-gap: 2rem;
+
+      @include medium-768 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+
+      @include small {
+        column-gap: 0;
+      }
+    }
+
+    .show-menu {
+      bottom: 0;
+    }
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: $small-font-size;
+      color: $text-color;
+      font-weight: $font-medium;
+      transition: 0.3s;
+    }
+
+    &__icon {
+      @include medium-768 {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__close {
+      @include medium-768 {
+        position: absolute;
+        right: 1.3rem;
+        bottom: 0.5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: $text-color;
+      }
+    }
+
+    &__close:hover {
+      color: $main-color;
+    }
+
+    &__icon,
+    &__close,
+    &__toggle {
+      display: none;
+
+      @include medium-768 {
+        display: block;
+      }
+    }
+
+    &__link:hover {
+      color: $main-color;
+    }
+
+    .active-link {
+      color: $main-color;
+    }
+  }
+}
