@@ -3,28 +3,29 @@
 .header {
   width: 100%;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: $z-fixed;
   background-color: $body-bg;
   opacity: 100%;
 
   @include medium-768 {
-    top: initial;
-    bottom: 0;
+    top: 0;
+    bottom: initial;
+    padding: 0 0rem;
+  }
+
+  @include large {
+    padding: 0;
   }
 
   .nav {
     max-width: 992px;
-    height: calc($header-height + 1.5rem);
+    height: $header-height;
     @include flex(center, space-between);
 
-    @include medium-768 {
-      height: $header-height;
-    }
-
     &__menu {
-      @include medium-768 {
+      @include medium-max-768 {
         position: fixed;
         bottom: -100%;
         left: 0;
@@ -38,6 +39,10 @@
       @include small {
         padding: 2rem 0.25rem 4rem;
       }
+
+      // @include medium-768 {
+      //   height: calc($header-height + 1.5rem);
+      // }
     }
 
     &__logo,
@@ -60,14 +65,8 @@
     }
 
     &__list {
-      display: flex;
-      column-gap: 2rem;
-
-      @include medium-768 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-      }
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
 
       @include small {
         column-gap: 0;
@@ -89,34 +88,37 @@
     }
 
     &__icon {
-      @include medium-768 {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
+    }
+
+    @include medium-768 {
+      &__icon,
+      &__close,
+      &__toggle {
+        display: none;
+      }
+
+      &__list {
+        display: flex;
+        column-gap: 2rem;
+      }
+
+      &__menu {
+        margin-left: auto;
       }
     }
 
     &__close {
-      @include medium-768 {
-        position: absolute;
-        right: 1.3rem;
-        bottom: 0.5rem;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: $text-color;
-      }
+      position: absolute;
+      right: 1.3rem;
+      bottom: 0.5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: $text-color;
     }
 
     &__close:hover {
       color: $main-color;
-    }
-
-    &__icon,
-    &__close,
-    &__toggle {
-      display: none;
-
-      @include medium-768 {
-        display: block;
-      }
     }
 
     &__link:hover {
@@ -126,5 +128,8 @@
     .active-link {
       color: $main-color;
     }
+  }
+  .scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
   }
 }

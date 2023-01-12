@@ -1,0 +1,103 @@
+@use "../../scss/" as *;
+
+.skills {
+  &__container {
+    row-gap: 0;
+  }
+
+  &__content {
+    transition: 0.3s;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: $mb-2-5;
+    cursor: pointer;
+  }
+
+  &__header {
+    transition: 0.3s;
+  }
+
+  &__header:hover {
+    color: $main-color;
+  }
+
+  &__icon,
+  &__arrow {
+    font-size: 2rem;
+    color: $text-color;
+  }
+
+  &__icon {
+    margin-right: $mb-0-75;
+  }
+
+  &__title {
+    font-size: $h3-font-size;
+  }
+
+  &__subtitle {
+    font-size: $small-font-size;
+    color: $text-color;
+  }
+
+  &__arrow {
+    margin-left: auto;
+    transition: 0.4s;
+  }
+
+  &__list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+  }
+
+  &__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $mb-0-5;
+  }
+
+  &__name {
+    font-size: $normal-font-size;
+    font-weight: $font-medium;
+  }
+
+  .skill__icon {
+    font-size: 1.5rem;
+    color: $text-color;
+  }
+
+  &__close &__list {
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__open &__list {
+    height: max-content;
+    margin-bottom: $mb-2-5;
+  }
+
+  &__open &__arrow {
+    transform: rotate(-180deg);
+  }
+
+  @include small {
+    &__titles {
+      font-size: $normal-font-size;
+    }
+  }
+
+  @include medium-576 {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include medium-768 {
+  }
+
+  @include large {
+  }
+}
