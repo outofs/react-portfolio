@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./qualification.scss";
 
 const Qualification = () => {
+  const [qualificationTab, setQualificationTab] = useState("education");
+
   return (
     <section className="qualification section">
       <div className="qualification__bg"></div>
@@ -11,16 +13,28 @@ const Qualification = () => {
         <div className="qualification__container container">
           <div className="qualification__tabs">
             <div
-              className="qualification__button button--flex qualification__active"
+              className={`qualification__button button--flex ${
+                qualificationTab === "education" ? "qualification__active" : ""
+              } `}
               data-target="#education"
+              onClick={() => {
+                setQualificationTab("education");
+              }}
             >
               <i className="uil uil-graduation-cap qualification__icon"></i>
               Education
             </div>
 
             <div
-              className="qualification__button button--flex"
-              data-target="#work"
+              className={`qualification__button button--flex ${
+                qualificationTab === "extracurricular"
+                  ? "qualification__active"
+                  : ""
+              } `}
+              data-target="#extracurricular"
+              onClick={() => {
+                setQualificationTab("extracurricular");
+              }}
             >
               <i className="uil uil-briefcase-alt qualification__icon"></i>
               Extracurricular
@@ -30,7 +44,9 @@ const Qualification = () => {
           <div className="qualification__sections">
             {/* <!-- Qualification content 1 --> */}
             <div
-              className="qualification__content qualification__active"
+              className={`qualification__content ${
+                qualificationTab === "education" ? "qualification__active" : ""
+              } `}
               data-content
               id="education"
             >
@@ -59,7 +75,6 @@ const Qualification = () => {
 
                 <div>
                   <span className="qualification__rounder"></span>
-                  {/* <!-- <span className="qualification__line"></span> --> */}
                 </div>
 
                 <div>
@@ -76,7 +91,15 @@ const Qualification = () => {
             </div>
 
             {/* <!-- Qualification content 2 --> */}
-            <div className="qualification__content" data-content id="work">
+            <div
+              className={`qualification__content ${
+                qualificationTab === "extracurricular"
+                  ? "qualification__active"
+                  : ""
+              } `}
+              data-content
+              id="work"
+            >
               {/* <!-- Qualification 1 --> */}
               <div className="qualification__data">
                 <div>

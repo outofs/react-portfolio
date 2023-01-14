@@ -29,7 +29,7 @@ const SkillStack = (props: SkillsProps) => {
       </div>
       <div className="skills__list grid">
         {props.skills?.map((skill, i) => (
-          <Skill skill={skill} />
+          <Skill skill={skill} key={i} />
         ))}
       </div>
     </div>

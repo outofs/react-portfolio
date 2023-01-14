@@ -1,0 +1,204 @@
+@use "../../scss" as *;
+
+.portfolio {
+  &__container {
+    .project-list {
+      position: relative;
+      padding: 1rem;
+      .swiper-slide {
+        width: 35%;
+
+        @include small {
+          width: 90%;
+        }
+
+        @include medium-min-350 {
+          width: 55%;
+        }
+
+        @include medium-576 {
+          width: 55%;
+        }
+
+        @include medium-768 {
+          width: 40%;
+        }
+      }
+      .portfolio__content {
+        position: relative;
+        // padding-top: 160%;
+        border: 1px solid rgba($black-gradient, 0.2);
+        box-shadow: 0px 0px 0px $black;
+        overflow: auto;
+        border-radius: 1rem;
+        transition: box-shadow 0.3s ease;
+
+        &::before {
+          content: "";
+          position: absolute;
+
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 40%;
+          background-image: linear-gradient(
+            to top,
+            $body-bg,
+            rgba($black-gradient, 0)
+          );
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          // border-radius: $border-radius;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 40%;
+          right: 0;
+          background-image: linear-gradient(
+            to bottom,
+            $body-bg,
+            rgba($black-gradient, 0)
+          );
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          // border-radius: $border-radius;
+        }
+
+        &:hover {
+          box-shadow: 2px 2px 5px $black;
+        }
+
+        &:hover:before {
+          opacity: 1;
+        }
+
+        &:hover:after {
+          opacity: 1;
+        }
+
+        &:hover .btns {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+
+      .portfolio__img {
+        width: 100%;
+        height: 300px;
+
+        @include small {
+          height: 180px;
+        }
+
+        @include medium-min-350 {
+          height: 200px;
+        }
+
+        @include medium-576 {
+          height: 250px;
+        }
+
+        @include medium-768 {
+          height: 300px;
+        }
+      }
+
+      .portfolio__data {
+        padding: 0.5rem;
+      }
+
+      .technology__item {
+        padding: 0.5rem 0.5rem;
+        border: 2px solid black;
+        border-radius: $border-radius;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: $body-bg;
+      }
+
+      .portfolio__title {
+        @include flex(center, center);
+      }
+
+      .portfolio__description {
+        height: 5rem;
+
+        @include small {
+          text-align: center;
+        }
+
+        @include medium-min-350 {
+          text-align: center;
+        }
+
+        @include medium-576 {
+          text-align: start;
+        }
+      }
+
+      .portfolio__technologies {
+        h4 {
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+
+          @include small {
+            text-align: center;
+          }
+
+          @include medium-min-350 {
+            text-align: center;
+          }
+        }
+
+        .technology__items {
+          display: flex;
+          flex-wrap: wrap;
+
+          @include small {
+            justify-content: center;
+          }
+
+          @include medium-min-350 {
+            justify-content: center;
+          }
+
+          & > * ~ * {
+            margin-left: 0.5rem;
+          }
+
+          .technology__item {
+            margin-bottom: 0.1rem;
+          }
+        }
+      }
+
+      .btns {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    }
+  }
+
+  &__title-slider {
+    @include flex(center, center);
+    flex-direction: column;
+
+    @include medium-576 {
+      @include flex(center, space-between);
+      flex-direction: row;
+    }
+
+    h2 {
+      margin-bottom: 0.5rem;
+      @include medium-576 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
