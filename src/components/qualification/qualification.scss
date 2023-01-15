@@ -33,6 +33,10 @@
 
   &__button:hover {
     color: $main-color;
+
+    .qualification__icon {
+      color: $main-color;
+    }
   }
 
   &__icon {
@@ -93,6 +97,10 @@
 
   &__button.qualification__active {
     color: $main-color;
+
+    .qualification__icon {
+      color: $main-color;
+    }
   }
 
   @include small {

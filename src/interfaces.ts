@@ -9,6 +9,7 @@ export interface SkillsProps {
   title: string;
   icon: string;
   skills: string[] | undefined;
+  skillsClose: boolean;
 }
 
 export interface SkillProps {

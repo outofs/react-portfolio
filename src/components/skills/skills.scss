@@ -22,6 +22,11 @@
 
   &__header:hover {
     color: $main-color;
+
+    .skills__icon,
+    .skills__arrow {
+      color: $main-color;
+    }
   }
 
   &__icon,

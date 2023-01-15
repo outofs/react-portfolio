@@ -4,7 +4,7 @@ import Skill from "./Skill";
 import "./skills.scss";
 
 const SkillStack = (props: SkillsProps) => {
-  const [skillsClose, setSkillClose] = useState(true);
+  const [skillsClose, setSkillClose] = useState(props.skillsClose);
 
   return (
     <div

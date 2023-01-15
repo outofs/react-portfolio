@@ -15,6 +15,7 @@ const Skills = () => {
           title="Front-End developer"
           icon="uil-brackets-curly"
           skills={skills.frontend}
+          skillsClose={false}
         />
 
         {/* <!-- Skills 2 -->
@@ -31,10 +32,11 @@ const Skills = () => {
           title="Designer"
           icon="uil-swatchbook"
           skills={skills.design}
+          skillsClose={true}
         />
 
         {/* <!-- Skills 4 --> */}
-        <SkillStack title="Other" icon="uil-life-ring" skills={skills.other} />
+        <SkillStack title="Other" icon="uil-life-ring" skills={skills.other} skillsClose={true} />
       </div>
     </section>
   );

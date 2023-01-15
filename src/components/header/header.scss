@@ -20,6 +20,7 @@
   }
 
   .nav {
+    position: relative;
     max-width: 992px;
     height: $header-height;
     @include flex(center, space-between);
@@ -100,11 +101,36 @@
 
       &__list {
         display: flex;
+        justify-content: space-between;
         column-gap: 2rem;
       }
 
       &__menu {
-        margin-left: auto;
+        width: 100%;
+        // margin-left: auto;
+        // margin-right: auto;
+      }
+
+      &__link {
+        position: relative;
+        font-size: 1.25rem;
+        font-weight: 500;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+
+        &::after {
+          content: "";
+          height: 2px;
+          width: 0;
+          position: absolute;
+          bottom: 0;
+          background-color: $main-color;
+          transition: width 0.3s ease;
+        }
+
+        &.active::after,
+        &:hover::after {
+          width: 100%;
+        }
       }
     }
 
@@ -129,7 +155,10 @@
       color: $main-color;
     }
   }
+}
+
+@include medium-768 {
   .scroll-header {
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.35);
   }
 }
