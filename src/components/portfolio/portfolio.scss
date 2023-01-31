@@ -90,7 +90,7 @@
         height: 300px;
 
         @include small {
-          height: 180px;
+          height: 150px;
         }
 
         @include medium-min-350 {
@@ -128,6 +128,8 @@
 
         @include small {
           text-align: center;
+          font-size: 0.8rem;
+          height: 3rem;
         }
 
         @include medium-min-350 {
@@ -171,6 +173,9 @@
 
           .technology__item {
             margin-bottom: 0.1rem;
+            @include small {
+              font-size: 0.5rem;
+            }
           }
         }
       }
