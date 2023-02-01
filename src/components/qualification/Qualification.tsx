@@ -6,7 +6,6 @@ const Qualification = () => {
 
   return (
     <section className="qualification section">
-      <div className="qualification__bg"></div>
       <div className="qualification__main">
         <h2 className="section__title">Qualification</h2>
         <span className="section__subtitle">My personal journey</span>

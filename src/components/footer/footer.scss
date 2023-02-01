@@ -4,7 +4,7 @@
   padding-top: 2rem;
 
   &__bg {
-    background-color: $black;
+    background-color: $text-color;
   }
 
   &__container {
@@ -44,7 +44,7 @@
   &__title,
   &__subtitle,
   &__link {
-    color: $white;
+    color: $body-bg;
   }
 
   @include medium-768 {
