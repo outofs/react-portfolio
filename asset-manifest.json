@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.cab8ffc6.css",
-    "main.js": "/react-portfolio/static/js/main.4c24090e.js",
+    "main.css": "/react-portfolio/static/css/main.3e9c0d89.css",
+    "main.js": "/react-portfolio/static/js/main.27793b7c.js",
+    "static/media/portfolio-img-small2.png": "/react-portfolio/static/media/portfolio-img-small2.a625f538747045884cc4.png",
     "static/media/prjct4.png": "/react-portfolio/static/media/prjct4.db7d0903b280fd3637db.png",
     "static/media/prjct1.png": "/react-portfolio/static/media/prjct1.ac29e8f97d5d98e21486.png",
     "static/media/prjct3.png": "/react-portfolio/static/media/prjct3.4ebab672f585cfdcfedc.png",
     "static/media/prjct7.png": "/react-portfolio/static/media/prjct7.7f65ac39bf51a828f554.png",
     "static/media/portfolio-img-small.png": "/react-portfolio/static/media/portfolio-img-small.4715617cfb06003cb3c8.png",
     "static/media/portfolio-img-2-transparent.png": "/react-portfolio/static/media/portfolio-img-2-transparent.0fc97b0003a83b1eecee.png",
-    "static/media/Oleksandr_Hyrich_CV.pdf": "/react-portfolio/static/media/Oleksandr_Hyrich_CV.17d7540bd068816a24c7.pdf",
+    "static/media/Oleksandr_Hyrich_CV.pdf": "/react-portfolio/static/media/Oleksandr_Hyrich_CV.dc87236e6e54eb86425f.pdf",
     "static/media/prjct6.png": "/react-portfolio/static/media/prjct6.ac856c8cdd247c5b52b5.png",
     "static/media/prjct5.png": "/react-portfolio/static/media/prjct5.db9d35a2772a1559416f.png",
     "static/media/prjct2.png": "/react-portfolio/static/media/prjct2.7c40cd037657399d6496.png",
     "static/media/portfolio-img-2-transparent.webp": "/react-portfolio/static/media/portfolio-img-2-transparent.932d5397543aafa0182c.webp",
     "static/media/portfolio-img-small.webp": "/react-portfolio/static/media/portfolio-img-small.e7869d3b86c40e94ee22.webp",
     "index.html": "/react-portfolio/index.html",
-    "main.cab8ffc6.css.map": "/react-portfolio/static/css/main.cab8ffc6.css.map",
-    "main.4c24090e.js.map": "/react-portfolio/static/js/main.4c24090e.js.map"
+    "main.3e9c0d89.css.map": "/react-portfolio/static/css/main.3e9c0d89.css.map",
+    "main.27793b7c.js.map": "/react-portfolio/static/js/main.27793b7c.js.map"
   },
   "entrypoints": [
-    "static/css/main.cab8ffc6.css",
-    "static/js/main.4c24090e.js"
+    "static/css/main.3e9c0d89.css",
+    "static/js/main.27793b7c.js"
   ]
 }
