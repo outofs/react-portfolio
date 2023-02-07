@@ -18,15 +18,6 @@ export const skills: Skills = {
 export const projects: Projects = {
   nativeJsProjects: [
     {
-      title: "Game: Dies Iræ",
-      description: "My own first project. Multiplayer game.",
-      technologies: ["JavaScript", "CSS", "HTML", "Git"],
-      demo: "https://gentle-maamoul-4be002.netlify.app/",
-      git: "https://github.com/outofs/dies-irae",
-      img: "projects-img/prjct1.png",
-    },
-
-    {
       title: "Bankist App",
       description:
         "Aplication that simulates the performance of certain banking functions.",
@@ -37,14 +28,22 @@ export const projects: Projects = {
     },
 
     {
-      title: "Mapty",
-      description: "First project where I'm used API.",
+      title: "Golden Store",
+      description: "Jewelry eCommerce responsive website Design.",
       technologies: ["JavaScript", "CSS", "HTML", "Git"],
-      demo: "https://strong-malabi-c96f8b.netlify.app/",
-      git: "https://github.com/outofs/project-mapty",
-      img: "projects-img/prjct7.png",
+      demo: "https://quiet-dango-d64ad8.netlify.app/",
+      git: "https://github.com/outofs/golden-store-project",
+      img: "projects-img/prjct5.png",
     },
-
+    {
+      title: "Game: Dies Iræ",
+      description:
+        "My own first project. Multiplayer game. (!!!ONLY FOR PC!!!)",
+      technologies: ["JavaScript", "CSS", "HTML", "Git"],
+      demo: "https://gentle-maamoul-4be002.netlify.app/",
+      git: "https://github.com/outofs/dies-irae",
+      img: "projects-img/prjct1.png",
+    },
     {
       title: "Forkify",
       description: "Library of diferent culinary recipes.",
@@ -60,43 +59,33 @@ export const projects: Projects = {
       git: "https://github.com/outofs/forkify-course-project",
       img: "projects-img/prjct3.png",
     },
-
+    // {
+    //   title: "Bankist website page",
+    //   description: "Web page with some JS scripts.",
+    //   technologies: ["JavaScript", "CSS", "HTML", "Git"],
+    //   demo: "https://exquisite-choux-543d84.netlify.app/",
+    //   git: "https://github.com/outofs/bankist-landing-page",
+    //   img: "projects-img/prjct6.png",
+    // },
+  ],
+  reactProjects: [
     {
-      title: "Forecast App",
+      title: "React Forecast App",
       description:
         "My responsive forecast application where i'm used OpenWeatherMap API.",
       technologies: [
+        "React",
         "JavaScript",
         "CSS",
         "HTML",
         "Git",
         "OpenWeatherMap API",
-        " Geolocation API",
+        "GeoDB Cities",
       ],
-      demo: "https://lucent-pavlova-0da62e.netlify.app/",
-      git: "https://github.com/outofs/forecast-project",
-      img: "projects-img/prjct4.png",
+      demo: "https://outofs.github.io/react-forecast-app/",
+      git: "https://github.com/outofs/react-forecast-app",
+      img: "react-img/prjct4.png",
     },
-
-    {
-      title: "Golden Store",
-      description: "Jewelry eCommerce responsive website Design.",
-      technologies: ["JavaScript", "CSS", "HTML", "Git"],
-      demo: "https://quiet-dango-d64ad8.netlify.app/",
-      git: "https://github.com/outofs/golden-store-project",
-      img: "projects-img/prjct5.png",
-    },
-
-    {
-      title: "Bankist website page",
-      description: "Web page with some JS scripts.",
-      technologies: ["JavaScript", "CSS", "HTML", "Git"],
-      demo: "https://exquisite-choux-543d84.netlify.app/",
-      git: "https://github.com/outofs/bankist-landing-page",
-      img: "projects-img/prjct6.png",
-    },
-  ],
-  reactProjects: [
     {
       title: "Note App",
       description: "Create, archive, edit and remove notes",
