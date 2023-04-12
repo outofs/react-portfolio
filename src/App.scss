@@ -81,15 +81,15 @@ a {
   padding: 6rem 0 2rem;
   // height: 100vh;
 
-  &::after {
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: $text-color;
-    position: absolute;
-    margin-top: 1rem;
-    // bottom: 0;
-  }
+  // &::after {
+  //   content: "";
+  //   height: 1px;
+  //   width: 100%;
+  //   background-color: $text-color;
+  //   position: absolute;
+  //   margin-top: 1rem;
+  //   // bottom: 0;
+  // }
 }
 
 .section__title {

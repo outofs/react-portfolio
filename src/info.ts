@@ -10,7 +10,7 @@ export const skills: Skills = {
     "TailWind",
     "RapidAPI",
   ],
-  backend: [""],
+  backend: ["Node.js", "Express", "REST API", "Mongoose(MongoDB)"],
   design: ["Photoshop", "Figma"],
   other: ["Git", "English(Intermediate)", "Digital Art", "Video Editing"],
 };
@@ -18,9 +18,27 @@ export const skills: Skills = {
 export const projects: Projects = {
   nativeJsProjects: [
     {
+      title: "Natours",
+      description:
+        "MERN stack project. Tour catalog with auth, payment and REST  functionality.",
+      technologies: [
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "Mongoose",
+        "CSS",
+        "PUG",
+        "Git",
+        "MCV",
+      ],
+      demo: "https://natours-node-j9u7.onrender.com/",
+      git: "https://github.com/outofs/natours",
+      img: "projects-img/prjct4.png",
+    },
+    {
       title: "Bankist App",
       description:
-        "Aplication that simulates the performance of certain banking functions.",
+        "Application that simulates the performance of certain banking functions.",
       technologies: ["JavaScript", "CSS", "HTML", "Git"],
       demo: "https://capable-genie-e755c7.netlify.app/",
       git: "https://github.com/outofs/bankist-app",
@@ -49,7 +67,7 @@ export const projects: Projects = {
       description: "Library of diferent culinary recipes.",
       technologies: [
         "JavaScript",
-        "CSS",
+        "SCSS",
         "HTML",
         "ForkifyAPI",
         "MCV Architecture",

@@ -18,14 +18,14 @@ const Skills = () => {
           skillsClose={false}
         />
 
-        {/* <!-- Skills 2 -->
+        {/* <!-- Skills 2 --> */}
 
         <SkillStack
           title="Back-End developer"
           icon="uil-server-network"
           skills={skills.backend}
+          skillsClose={true}
         />
-        */}
 
         {/* <!-- Skills 3 --> */}
         <SkillStack
@@ -36,7 +36,12 @@ const Skills = () => {
         />
 
         {/* <!-- Skills 4 --> */}
-        <SkillStack title="Other" icon="uil-life-ring" skills={skills.other} skillsClose={true} />
+        <SkillStack
+          title="Other"
+          icon="uil-life-ring"
+          skills={skills.other}
+          skillsClose={true}
+        />
       </div>
     </section>
   );

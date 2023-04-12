@@ -52,13 +52,13 @@ const Qualification = () => {
               {/* <!-- Qualification 1 --> */}
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">Computer Science</h3>
+                  <h3 className="qualification__title">Cybersecurity</h3>
                   <span className="qualification__subtitle">
-                    Lutsk - Volyn national university
+                    Kyiv - National aviation university
                   </span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar-alt"></i>
-                    2017-2021
+                    2021-2022
                   </div>
                 </div>
 
@@ -77,13 +77,13 @@ const Qualification = () => {
                 </div>
 
                 <div>
-                  <h3 className="qualification__title">Cybersecurity</h3>
+                  <h3 className="qualification__title">Computer Science</h3>
                   <span className="qualification__subtitle">
-                    Kyiv - National aviation university
+                    Lutsk - Volyn national university
                   </span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar-alt"></i>
-                    2021-2022
+                    2017-2021
                   </div>
                 </div>
               </div>
@@ -101,9 +101,37 @@ const Qualification = () => {
             >
               {/* <!-- Qualification 1 --> */}
               <div className="qualification__data">
+                <div></div>
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+
+                <div>
+                  <a
+                    href="https://www.udemy.com/certificate/UC-d55630f5-a8b0-4d16-b137-9103cc32c2a2/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <h3 className="qualification__title qualification__link">
+                      Node.js, Express, MongoDB & More: The Complete Bootcamp
+                      2023
+                    </h3>
+                  </a>
+
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar-alt"></i>
+                    2023
+                  </div>
+                </div>
+              </div>
+
+              {/* <!-- Qualification 2 --> */}
+              <div className="qualification__data">
                 <div>
                   <a
                     href="https://www.udemy.com/certificate/UC-4314b613-febf-4e9f-a716-9d153b117cb1/"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     <h3 className="qualification__title qualification__link">
@@ -124,7 +152,7 @@ const Qualification = () => {
                 </div>
               </div>
 
-              {/* <!-- Qualification 2 --> */}
+              {/* <!-- Qualification 3 --> */}
               <div className="qualification__data">
                 <div></div>
 
@@ -136,6 +164,7 @@ const Qualification = () => {
                 <div>
                   <a
                     href="https://courses.prometheus.org.ua:18090/downloads/5828fad4f3af4330bfcd07ffc602b762/Certificate.pdf"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     <h3 className="qualification__title qualification__link">
@@ -150,11 +179,12 @@ const Qualification = () => {
                 </div>
               </div>
 
-              {/* <!-- Qualification 3 --> */}
+              {/* <!-- Qualification 4 --> */}
               <div className="qualification__data">
                 <div>
                   <a
                     href="https://courses.prometheus.org.ua:18090/downloads/2d888fa11fa24049957ceef319c27678/Certificate.pdf"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     <h3 className="qualification__title qualification__link">
@@ -173,7 +203,7 @@ const Qualification = () => {
                 </div>
               </div>
 
-              {/* <!-- Qualification 4 --> */}
+              {/* <!-- Qualification 5 --> */}
               <div className="qualification__data">
                 <div></div>
 
@@ -184,6 +214,7 @@ const Qualification = () => {
                 <div>
                   <a
                     href="https://courses.prometheus.org.ua:18090/downloads/552e057e8ac44236a135cf2d67d7ed9a/Certificate.pdf"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     <h3 className="qualification__title qualification__link">
