@@ -31,7 +31,7 @@
         bottom: -100%;
         left: 0;
         width: 100%;
-        background-color: $body-bg;
+        background-color: $white;
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba($color: #ffffff, $alpha: 0.25);
         transition: 0.3s;
@@ -89,6 +89,7 @@
     }
 
     &__icon {
+      color: $black;
       font-size: 1.2rem;
     }
 
@@ -139,7 +140,7 @@
       bottom: 0.5rem;
       font-size: 1.5rem;
       cursor: pointer;
-      color: $text-color;
+      color: $black;
     }
 
     &__close:hover {
