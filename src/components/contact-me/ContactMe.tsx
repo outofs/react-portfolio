@@ -14,7 +14,7 @@ const ContactMe = () => {
 
           <Contact
             title="Email"
-            subTitle="rtranscendental@gmail.com"
+            subTitle="oleksandr.hirych@gmail.com"
             icon="uil-envelope"
           />
 

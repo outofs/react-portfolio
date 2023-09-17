@@ -12,9 +12,8 @@ const Qualification = () => {
         <div className="qualification__container container">
           <div className="qualification__tabs">
             <div
-              className={`qualification__button button--flex ${
-                qualificationTab === "education" ? "qualification__active" : ""
-              } `}
+              className={`qualification__button button--flex ${qualificationTab === "education" ? "qualification__active" : ""
+                } `}
               data-target="#education"
               onClick={() => {
                 setQualificationTab("education");
@@ -25,11 +24,10 @@ const Qualification = () => {
             </div>
 
             <div
-              className={`qualification__button button--flex ${
-                qualificationTab === "extracurricular"
+              className={`qualification__button button--flex ${qualificationTab === "extracurricular"
                   ? "qualification__active"
                   : ""
-              } `}
+                } `}
               data-target="#extracurricular"
               onClick={() => {
                 setQualificationTab("extracurricular");
@@ -43,9 +41,8 @@ const Qualification = () => {
           <div className="qualification__sections">
             {/* <!-- Qualification content 1 --> */}
             <div
-              className={`qualification__content ${
-                qualificationTab === "education" ? "qualification__active" : ""
-              } `}
+              className={`qualification__content ${qualificationTab === "education" ? "qualification__active" : ""
+                } `}
               data-content
               id="education"
             >
@@ -91,14 +88,37 @@ const Qualification = () => {
 
             {/* <!-- Qualification content 2 --> */}
             <div
-              className={`qualification__content ${
-                qualificationTab === "extracurricular"
+              className={`qualification__content ${qualificationTab === "extracurricular"
                   ? "qualification__active"
                   : ""
-              } `}
+                } `}
               data-content
               id="work"
             >
+              <div className="qualification__data">
+                <div>
+                  <a
+                    href="https://drive.google.com/file/d/1DLdz0sC1aX1BrctVojUDvhE8YnU1FFES/view"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <h3 className="qualification__title qualification__link">
+                      Practical React Course,
+                      SoftServe
+                    </h3>
+                  </a>
+
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar-alt"></i>
+                    2023
+                  </div>
+                </div>
+
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+              </div>
               {/* <!-- Qualification 1 --> */}
               <div className="qualification__data">
                 <div></div>

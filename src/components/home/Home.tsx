@@ -10,21 +10,21 @@ const Home = () => {
               <a
                 href="https://www.linkedin.com/in/oleksandr-hirych-0757b3243/"
                 target="_blank"
-                className="home__social-icon"
+                className="home__social-icon" rel="noreferrer"
               >
                 <i className="uil uil-linkedin-alt"></i>
               </a>
               <a
                 href="https://www.artstation.com/outofs"
                 target="_blank"
-                className="home__social-icon"
+                className="home__social-icon" rel="noreferrer"
               >
                 <i className="uil uil-palette"></i>
               </a>
               <a
                 href="https://github.com/outofs"
                 target="_blank"
-                className="home__social-icon"
+                className="home__social-icon" rel="noreferrer"
               >
                 <i className="uil uil-github-alt"></i>
               </a>
@@ -43,7 +43,7 @@ const Home = () => {
             </div>
             <div className="home__data">
               <h1 className="home__title">Hi, I'am Oleksandr</h1>
-              <h3 className="home__subtitle">Front-End developer</h3>
+              <h3 className="home__subtitle">Fullstack developer</h3>
               <p className="home__description">
                 Welcome to my portfolio! Wish that you'll find something
                 interesting here.

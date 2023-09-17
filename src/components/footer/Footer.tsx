@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer__container container grid">
           <div>
             <h1 className="footer__title">Oleksandr</h1>
-            <span className="footer__subtitle">Front-End Developer</span>
+            <span className="footer__subtitle">Fullstack Developer</span>
           </div>
 
           <ul className="footer__links">
@@ -33,21 +33,21 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/profile.php?id=100017288166286"
               target="_blank"
-              className="footer__social"
+              className="footer__social" rel="noreferrer"
             >
               <i className="uil uil-facebook footer__icon"></i>
             </a>
             <a
               href="https://www.instagram.com/out.ofs"
               target="_blank"
-              className="footer__social"
+              className="footer__social" rel="noreferrer"
             >
               <i className="uil uil-instagram footer__icon"></i>
             </a>
             <a
-              href="https://t.me/trnscdntl"
+              href="https://t.me/olxndr_h"
               target="_blank"
-              className="footer__social"
+              className="footer__social" rel="noreferrer"
             >
               <i className="uil uil-telegram footer__icon"></i>
             </a>

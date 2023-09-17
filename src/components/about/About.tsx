@@ -32,11 +32,12 @@ const About = () => {
             </div>
             <div className="about__data">
               <p className="about__description">
-                I'm a Front-End developer, amateur designer and illustrator :)
-                <br />
-                At the beginning of 2022, I decided to start learning JavaScript
-                after which I also began to study HTML and CSS. My progress is
-                my projects. So, check it out.
+                I am a responsible, detail-oriented Fullstack developer, amateur designer and illustrator with a passion for continuous improvement :)
+              </p>
+              <p className="about__description">
+                Proficient in JavaScript, TypeScript, HTML, CSS, React, and Node.js, I hold a Master's Degree in
+                Cybersecurity. During my Computer Science studies, I gained foundational knowledge in MongoDB, C,
+                and C++.
               </p>
             </div>
 

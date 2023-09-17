@@ -2,17 +2,18 @@ import { Projects, Skills } from "./interfaces";
 
 export const skills: Skills = {
   frontend: [
-    "HTML",
+    "HTML5",
+    "Pug",
     "CSS/SCSS",
     "JavaScript(ES6)/TypeScript",
     "React.js",
     "Redux Toolkit",
     "TailWind",
-    "RapidAPI",
+    "MUI",
   ],
-  backend: ["Node.js", "Express", "REST API", "Mongoose(MongoDB)"],
+  backend: ["Node.js", "Express", "REST API", "Mongoose(MongoDB)", "Sequelize"],
   design: ["Photoshop", "Figma"],
-  other: ["Git", "English(Intermediate)", "Digital Art", "Video Editing"],
+  other: ["Git", "NPM", "Webpack", "Eslint", "English(Upper Intermediate)", "Basic OOP understanding", "Basic PHP, C, and C++ knowledge", "Digital Art", "Video Editing"],
 };
 
 export const projects: Projects = {
@@ -34,6 +35,20 @@ export const projects: Projects = {
       demo: "https://natours-node-j9u7.onrender.com/",
       git: "https://github.com/outofs/natours",
       img: "projects-img/prjct4.png",
+    },
+    {
+      title: "MyBike",
+      description:
+        "Responsive landing page for future bike's store.",
+      technologies: [
+        "HTML",
+        "JavaScript",
+        "SCSS",
+        "Git",
+      ],
+      demo: "https://outofs.github.io/my-bike-landing/",
+      git: "https://github.com/outofs/my-bike-landing",
+      img: "projects-img/prjct8.png",
     },
     {
       title: "Bankist App",
@@ -76,17 +91,54 @@ export const projects: Projects = {
       demo: "https://kaleidoscopic-frangipane-33b074.netlify.app/",
       git: "https://github.com/outofs/forkify-course-project",
       img: "projects-img/prjct3.png",
-    },
-    // {
-    //   title: "Bankist website page",
-    //   description: "Web page with some JS scripts.",
-    //   technologies: ["JavaScript", "CSS", "HTML", "Git"],
-    //   demo: "https://exquisite-choux-543d84.netlify.app/",
-    //   git: "https://github.com/outofs/bankist-landing-page",
-    //   img: "projects-img/prjct6.png",
-    // },
+    }
   ],
   reactProjects: [
+    {
+      title: "Nice Gadgets",
+      description: "react group project. Gadget’s store with our own API. The website has catalog for each category, details, favorites, cart pages.",
+      technologies: [
+        "TypeScript",
+        "SCSS",
+        "React",
+        "Node.js",
+        "Express",
+        "Sequelize",
+        "Git",
+      ],
+      demo: "https://fe-may23-scriptsquad.github.io/phone-catalogue-fe/#/home",
+      git: "https://github.com/fe-may23-scriptsquad/phone-catalogue-fe",
+      img: "react-img/prjct6.png",
+    },
+    {
+      title: "ToDo App",
+      description: "Create, archive, edit and remove your todos.",
+      technologies: [
+        "TypeScript",
+        "SCSS",
+        "React",
+        "Git",
+      ],
+      demo: "https://outofs.github.io/react-todo-app-with-api/",
+      git: "https://github.com/outofs/react-todo-app-with-api",
+      img: "react-img/prjct5.png",
+    },
+    {
+      title: "Sanime",
+      description: "Responsive anime website.",
+      technologies: [
+        "TypeScript",
+        "SCSS",
+        "React",
+        "Redux Toolkit",
+        "RapidApi",
+        "AnimeDB API",
+        "Git",
+      ],
+      demo: "https://outofs.github.io/react-anime-website",
+      git: "https://github.com/outofs/react-anime-website",
+      img: "react-img/prjct3.png",
+    },
     {
       title: "React Forecast App",
       description:
@@ -112,7 +164,6 @@ export const projects: Projects = {
       git: "https://github.com/outofs/notes-app-task-2",
       img: "react-img/prjct1.png",
     },
-
     {
       title: "Music App",
       description:
@@ -130,23 +181,6 @@ export const projects: Projects = {
       demo: "https://gleaming-croquembouche-c1d5b9.netlify.app/",
       git: "https://github.com/outofs/music-app",
       img: "react-img/prjct2.png",
-    },
-
-    {
-      title: "Sanime",
-      description: "Responsive anime website.",
-      technologies: [
-        "TypeScript",
-        "SCSS",
-        "React",
-        "Redux Toolkit",
-        "RapidApi",
-        "AnimeDB API",
-        "Git",
-      ],
-      demo: "https://outofs.github.io/react-anime-website",
-      git: "https://github.com/outofs/react-anime-website",
-      img: "react-img/prjct3.png",
     },
   ],
 };
