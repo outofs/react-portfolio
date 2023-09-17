@@ -51,12 +51,16 @@
   &__scroll-button {
     color: $text-color;
     transition: 0.3s;
-  }
+    width: max-content;
 
-  &__scroll-button:hover {
-    /* color: var(--first-color-alt); */
-    transform: translateY(0.25rem);
-    color: $main-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:hover {
+      transform: translateY(0.25rem);
+      color: $main-color;
+    }
   }
 
   &__scroll-mouse {
@@ -68,6 +72,12 @@
     color: $text-color;
     font-weight: $font-medium;
     margin-right: $mb-0-25;
+    transition: 0.3s;
+
+    &:hover {
+      // transform: translateY(0.25rem);
+      color: $main-color;
+    }
   }
 
   &__scroll-arrow {
